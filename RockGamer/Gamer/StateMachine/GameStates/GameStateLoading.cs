@@ -16,12 +16,10 @@ namespace RockGamer.Gamer.StateMachine.GameStates
     public class GameStateLoading : GameState
     {
 
-        Label lb;
 
         public GameStateLoading(GameScreen gs) : base(gs)
         {
-            lb = new Label(UtilityContent.debugFont, "");
-            lb.Position = new Vector2(600, 400);
+
         }
 
         public override void Load(ContentManager content)
@@ -40,18 +38,12 @@ namespace RockGamer.Gamer.StateMachine.GameStates
         {
             base.ActiveUpdate(gt);
 
-            if(Input.KeyClick(Keys.F))
-                StartExit(new GameStatePlaying(game));
-
         }
 
         public override void Draw(SpriteBatch sb, Camera cam)
         {
             base.Draw(sb, cam);
             sb.Begin();
-
-            lb.Text = $"Loading Percent:  {FadeProgress * 100:N0}%";
-            lb.Draw(sb);
 
             sb.End();
         }

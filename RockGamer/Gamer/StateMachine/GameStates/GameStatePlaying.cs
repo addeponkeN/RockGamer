@@ -16,22 +16,16 @@ namespace RockGamer.Gamer.StateMachine.GameStates
     public class GameStatePlaying : GameState
     {
 
-        Label lb;
 
         public GameStatePlaying(GameScreen gs) : base(gs)
         {
-            FadeInTime = 2f;
-            FadeOutTime = 2f;
 
-            lb = new Label(UtilityContent.debugFont, "");
-            lb.Position = new Vector2(600, 400);
         }
 
         public override void Load(ContentManager content)
         {
             base.Load(content);
 
-            SoundManager.Load(game.Content);
         }
 
         public override void Update(GameTime gt, GameScreen gs)
@@ -44,20 +38,12 @@ namespace RockGamer.Gamer.StateMachine.GameStates
         {
             base.ActiveUpdate(gt);
 
-            if(Input.KeyClick(Keys.F))
-                StartExit(new GameStateLoading(game));
-
-            if(Input.KeyClick(Keys.W))
-                SoundManager.PlaySound(GameSoundType.Shoot);
         }
 
         public override void Draw(SpriteBatch sb, Camera cam)
         {
             base.Draw(sb, cam);
             sb.Begin();
-
-            lb.Text = $"Playing Percent:  {FadeProgress * 100:N0}%";
-            lb.Draw(sb);
 
             sb.End();
         }
