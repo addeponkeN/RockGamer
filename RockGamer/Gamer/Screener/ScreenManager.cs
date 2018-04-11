@@ -193,7 +193,7 @@ namespace RockGamer.Screener
             GraphicsDevice.Clear(ClearOptions.Target, new Color(33, 33, 33), 1f, 0);
             frameCounter.DrawStart();
 
-            Game.Window.Title = $"{Globals.ProjectName} - FPS: {frameCounter.FrameRate}  DMS: {frameCounter.DrawMS}";
+            Game.Window.Title = $"{Globals.ProjectName} - [FPS: {frameCounter.FrameRate}]  [DMS: {frameCounter.DrawMS}]";
 
             foreach(Screen screen in screens)
             {
