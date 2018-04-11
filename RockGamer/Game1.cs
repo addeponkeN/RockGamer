@@ -16,29 +16,6 @@ namespace RockGamer
 
         public Game1()
         {
-            Console.WriteLine("its nice with food and eat it!!!!");
-
-            Console.WriteLine("yes agree yum yum and here is nice numbers: ");
-
-            int numId = 5512;
-
-            if(numId == 1115)
-            {
-                Console.WriteLine("its nice");
-            }
-            else
-            {
-                Console.WriteLine("also fake it and win it"  + "   agree yes");
-            }
-
-            Console.WriteLine("23232323#");
-            Console.WriteLine("#testser");
-
-            int httt = 25;
-
-            Console.WriteLine("nice");
-
-
             graphics = new GraphicsDeviceManager(this);
             Content.RootDirectory = "Content";
 
