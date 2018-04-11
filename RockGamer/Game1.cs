@@ -31,6 +31,14 @@ namespace RockGamer
                 Console.WriteLine("also fake it and win it"  + "   agree yes");
             }
 
+            Console.WriteLine("23232323#");
+            Console.WriteLine("#testser");
+
+            int httt = 25;
+
+            Console.WriteLine("nice");
+
+
             graphics = new GraphicsDeviceManager(this);
             Content.RootDirectory = "Content";
 
