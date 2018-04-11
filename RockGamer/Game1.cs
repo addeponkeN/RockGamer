@@ -16,6 +16,14 @@ namespace RockGamer
 
         public Game1()
         {
+            Console.WriteLine("23232323#");
+            Console.WriteLine("#testser");
+
+            int httt = 25;
+
+            Console.WriteLine("nice");
+
+
             graphics = new GraphicsDeviceManager(this);
             Content.RootDirectory = "Content";
 
