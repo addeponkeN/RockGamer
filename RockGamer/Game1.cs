@@ -16,13 +16,6 @@ namespace RockGamer
 
         public Game1()
         {
-            Console.WriteLine("nicer gamser starter       alos more ");
-
-            int asdw = 55;
-            int sum = asdw + 11;
-
-            Console.WriteLine("game start");
-
             graphics = new GraphicsDeviceManager(this);
             Content.RootDirectory = "Content";
 
