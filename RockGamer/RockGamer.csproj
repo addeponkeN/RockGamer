@@ -161,6 +161,7 @@
     <Content Include="Content\Textures\box.png" />
     <Content Include="Content\Textures\boxbox.png" />
     <Content Include="Content\Textures\boxhalf.png" />
+    <Content Include="Content\Textures\TREE.png" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Gamer\GameContent\Shaders\" />
