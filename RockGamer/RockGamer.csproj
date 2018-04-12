@@ -56,6 +56,7 @@
     <Compile Include="Gamer\Misc\Pathfinding\PathfindAStar.cs" />
     <Compile Include="Gamer\Network\NetCommand.cs" />
     <Compile Include="Gamer\Network\NetworkManager.cs" />
+    <Compile Include="Gamer\Player.cs" />
     <Compile Include="Gamer\PlayerControls.cs" />
     <Compile Include="Gamer\Screener\MenuScreen.cs" />
     <Compile Include="Gamer\Screener\PopupScreen.cs" />
