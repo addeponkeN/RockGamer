@@ -14,10 +14,14 @@ namespace RockGamer.Gamer
     {
         static ContentManager content;
 
+        static Texture2D tree;
+
         public static void Load(ContentManager c)
         {
             content = c;
             AnimationManager.Load();
+
+            tree = Texture("TREE");
         }
 
         public static void Unload()
