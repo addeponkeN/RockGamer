@@ -16,6 +16,7 @@ namespace RockGamer.Gamer.StateMachine.GameStates
     public class GameStatePlaying : GameState
     {
 
+        MotherTree mTree;
 
         public GameStatePlaying(GameScreen gs) : base(gs)
         {
@@ -25,6 +26,9 @@ namespace RockGamer.Gamer.StateMachine.GameStates
         public override void Load(ContentManager content)
         {
             base.Load(content);
+
+            mTree = new MotherTree();
+            mTree.Position = GHelper.Center(Globals.ScreenBox, mTree.Size);
 
         }
 
@@ -44,6 +48,8 @@ namespace RockGamer.Gamer.StateMachine.GameStates
         {
             base.Draw(sb, cam);
             sb.Begin();
+
+            mTree.Draw(sb);
 
             sb.End();
         }

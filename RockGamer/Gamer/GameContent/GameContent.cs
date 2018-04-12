@@ -14,7 +14,7 @@ namespace RockGamer.Gamer
     {
         static ContentManager content;
 
-        static Texture2D tree;
+        public static Texture2D tree;
 
         public static void Load(ContentManager c)
         {

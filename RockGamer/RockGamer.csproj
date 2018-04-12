@@ -50,13 +50,14 @@
     <Compile Include="Game1.cs" />
     <Compile Include="Gamer\AnimationManager.cs" />
     <Compile Include="Gamer\GameContent\GameContent.cs" />
+    <Compile Include="Gamer\GameObjects\MotherTree.cs" />
     <Compile Include="Gamer\Globals.cs" />
     <Compile Include="Gamer\Layer.cs" />
     <Compile Include="Gamer\Misc\MessagePopupManager.cs" />
     <Compile Include="Gamer\Misc\Pathfinding\PathfindAStar.cs" />
     <Compile Include="Gamer\Network\NetCommand.cs" />
     <Compile Include="Gamer\Network\NetworkManager.cs" />
-    <Compile Include="Gamer\Player.cs" />
+    <Compile Include="Gamer\GameObjects\Player.cs" />
     <Compile Include="Gamer\PlayerControls.cs" />
     <Compile Include="Gamer\Screener\MenuScreen.cs" />
     <Compile Include="Gamer\Screener\PopupScreen.cs" />
