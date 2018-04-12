@@ -190,7 +190,7 @@ namespace RockGamer.Screener
         /// </summary>
         public override void Draw(GameTime gt)
         {
-            GraphicsDevice.Clear(ClearOptions.Target, new Color(33, 33, 33), 1f, 0);
+            GraphicsDevice.Clear(ClearOptions.Target, Color.DarkGreen, 1f, 0);
             frameCounter.DrawStart();
 
             Game.Window.Title = $"{Globals.ProjectName} - [FPS: {frameCounter.FrameRate}]  [DMS: {frameCounter.DrawMS}]";

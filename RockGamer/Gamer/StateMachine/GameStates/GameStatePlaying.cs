@@ -28,7 +28,7 @@ namespace RockGamer.Gamer.StateMachine.GameStates
             base.Load(content);
 
             mTree = new MotherTree();
-            mTree.Position = GHelper.Center(Globals.ScreenBox, mTree.Size);
+            mTree.Position = GHelper.Center(Globals.ScreenBox, mTree.Size) + new Vector2(0, -(mTree.Size.Y / 3));
 
         }
 
